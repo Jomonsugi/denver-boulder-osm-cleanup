@@ -20,7 +20,7 @@ def get_element(osm_file, tags=('node', 'way', 'relation')):
             yield elem
             root.clear()
 
-'''
+# changing the number of enumerations from 500 will result in a smaller or larger file accordingly 
 with open(SAMPLE_FILE, 'wb') as output:
     output.write('<?xml version="1.0" encoding="UTF-8"?>\n')
     output.write('<osm>\n  ')
@@ -31,10 +31,13 @@ with open(SAMPLE_FILE, 'wb') as output:
             output.write(ET.tostring(element, encoding='utf-8'))
 
     output.write('</osm>')
-'''
+
+# used to print out a specified number of lines of the xml file in a readable format
+```
 from pprint import pprint
 for i, element in enumerate(get_element(OSM_FILE)):
     pprint(ET.tostring(element, encoding='utf-8'))
     if i == 1000:
         break
+```
 
