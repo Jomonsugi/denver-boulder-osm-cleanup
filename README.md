@@ -1,5 +1,5 @@
 # denver-boulder-osm-cleanup
-clean_audit.py audits and cleans OpenStreetMap xml file for Denver-Boulder. Converts file to json. 
+clean_convert.py audits and cleans OpenStreetMap xml file for Denver-Boulder. Converts file to json. 
 
 This code is a working project as additional auditing and cleaning processes can be added over time. 
 As is, the program cleans the Denver-Boulder xml file (https://mapzen.com/data/metro-extracts (Denver Boulder, Colorado OSM XML))
